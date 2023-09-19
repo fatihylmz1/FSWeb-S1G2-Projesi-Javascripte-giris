@@ -19,6 +19,10 @@ Aşağıdakileri yap:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+const surucuYasi = 24;
+if (surucuYasi > 18) {
+  console.log('true');
+}
 
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
@@ -52,8 +56,11 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a,b) {
+  const carpim = a * b;
+  return carpim
+  console.log(carpma(7,4))
+
 }
 
 /* Görev 2 : Köpeğin Yaşı */
@@ -65,8 +72,10 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(x) {
+  const a = 25;
+const kopeginYasi = a / 7;
+return kopeginYasi
 }
 
 /* Görev 3 */
@@ -84,8 +93,36 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar) {
-  /*buraya kodunu yazabilirsin*/
+  const secim1 = 'Taş';
+  const secim2 = 'Kağıt';
+  const secim3 = 'Makas';
+  if (oyuncu == secim1 && bilgisayar == secim3) {
+    console.log('Kazandın!');
+     if (oyuncu == secim2 && bilgisayar == secim1){
+        console.log('Kazandın!');
+    
+  }
+         if (oyuncu == secim3 && bilgisayar == secim2) {
+             console.log('Kazandın!');
+  }
+  if (oyuncu == secim1 && bilgisayar == secim1){
+    console.log('Beraberlik!')
+  }
+  if (oyuncu == secim2 && bilgisayar == secim2){
+    console.log('Beraberlik!');
+  }
+  if (oyuncu == secim3 && bilgisayar == secim3){
+    console.log('Beraberlik!');
+  }
+  else {
+    console.log('Kaybettin!');
+  }
+  }
+ 
+  
+
 }
+  
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
@@ -113,8 +150,11 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(km) {
+  return km * 1,6;
+
+
+
 }
 
 //Görev 4b - Santimetreden Feet
@@ -127,8 +167,8 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm) {
+  return cm * 0,32808;
 }
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -163,8 +203,26 @@ Aşağdakileri notHesapla fonksiyonunda yap.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function notHesapla(sinavsonucu) {
+let sinavsonucu = 'a';
+  if (a <= 100 && a >= 90 ){
+    console.log('A aldın');
+  }
+  
+if(a <= 89 && a >= 80){
+  console.log('B aldın');
+}
+
+if (a <= 79 && a >= 70){
+  console.log('C aldın');
+}
+if (a <= 69 && a >= 60){
+  console.log('D aldın');
+}
+if (a < 60){
+  console.log('F aldın')
+}
+  return a
 }
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
